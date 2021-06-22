@@ -141,7 +141,7 @@ export default function Question() {
                 </div>
 
                 <div>
-                    <button onClick={submitQuestion}>Click Here To Question</button>
+                    <button onClick={submitQuestion}>Click Here To Add Your Question</button>
                 </div>
 
 
