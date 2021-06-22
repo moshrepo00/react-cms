@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 const path = require('path');
 
 
-app.use(express.static(path.join(__dirname, '../build/drupal-api-frontend')));
+app.use(express.static(path.join(__dirname, '../build')));
 app.get('*', (req, res) => {
-    const dist = path.join(__dirname, '../dist/drupal-api-frontend/index.html');
+    const dist = path.join(__dirname, '../build/index.html');
     res.sendFile(dist);
 });
 
