@@ -1,7 +1,7 @@
 const helpers = {
     apiFetch: async (endpoint, method, body = null) => {
         try {
-            const url = `hhttps://cms-backend.moweb.info/survey` + endpoint;
+            const url = `https://cms-backend.moweb.info/survey` + endpoint;
             const fetchObj = {
                 method,
                 mode: 'cors',
